@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/governance-building/static/css/main.792d92ef.css",
+    "main.js": "/governance-building/static/js/main.3b64e9ff.js",
+    "index.html": "/governance-building/index.html",
+    "main.792d92ef.css.map": "/governance-building/static/css/main.792d92ef.css.map",
+    "main.3b64e9ff.js.map": "/governance-building/static/js/main.3b64e9ff.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.792d92ef.css",
+    "static/js/main.3b64e9ff.js"
+  ]
+}
