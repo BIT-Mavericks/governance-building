@@ -1,0 +1,83 @@
+/* Glitch text effect */
+.glitch-text {
+  position: relative;
+  color: #00FFFF;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.7rem;
+  animation: glitch-anim-1 2s infinite linear alternate-reverse;
+  white-space: nowrap;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch-text::before {
+  color: magenta;
+  animation: glitch-anim-2 2s infinite linear alternate-reverse;
+}
+
+.glitch-text::after {
+  color: cyan;
+  animation: glitch-anim-3 2s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim-1 {
+  0% { transform: translate(0); }
+  100% { transform: translate(2px, 2px); }
+}
+
+@keyframes glitch-anim-2 {
+  0% { transform: translate(-2px, -2px); }
+  100% { transform: translate(2px, 2px); }
+}
+
+@keyframes glitch-anim-3 {
+  0% { transform: translate(2px, -2px); }
+  100% { transform: translate(-2px, 2px); }
+}
+
+/* Card styles */
+.proposal-card,
+.building-card,
+.progress-card {
+  border: 1px solid #00FFFF;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.proposal-card:hover,
+.building-card:hover,
+.progress-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Button styles */
+.MuiButton-root {
+  color: #00FFFF !important;
+  border-color: #00FFFF !important;
+}
+
+.MuiButton-root:hover {
+  background-color: rgba(0, 255, 255, 0.1) !important;
+}
+
+/* Typography */
+h6, .MuiTypography-h6 {
+  color: #00FFFF !important;
+  font-family: 'Orbitron', sans-serif !important;
+}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+.orbitron-font {
+  font-family: 'Orbitron', sans-serif;
+}
